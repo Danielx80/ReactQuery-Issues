@@ -1,0 +1,11 @@
+
+
+// Se uso para poner un determinado tiempo para recargar la pagina 
+export const sleep = (seconds: number = 1): Promise<boolean> => {
+	
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(true)
+		}, seconds * 1000)
+	})
+}
